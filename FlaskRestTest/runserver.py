@@ -6,7 +6,7 @@ from os import environ
 from FlaskRestTest import app
 
 if __name__ == '__main__':
-    HOST = environ.get('SERVER_HOST', 'localhost')
+    HOST = "0.0.0.0"
     try:
         PORT = int('5555')
     except ValueError:
